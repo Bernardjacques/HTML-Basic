@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Les bases de l'html</title>
+</head>
+<body>
+  <h1>Les bases de l'html </h1>
+
+    <h2><a href="https://www.w3schools.com/html/default.asp">Les Balises</a></h2>
+      <h3><a href="http://www.pierre-giraud.com/html-css/cours-complet/elements-balises-attributs-html.php">Les balises paires</a></h3>
+        <p>Les balises HTML respectent une syntaxe simple et stricte : </p>
+          <ul>
+            <li>Un chevron ouvrant (<)</li>
+            <li>le nom de la balise</li>
+            <li>des attributs (optionnels)</li>
+            <li>Un chevron fermant (>)</li>
+          </ul>
+        <p>En général, les balises fonctionnent par paires.
+          La première balise est une balise ouvrante et la seconde est
+          fermante. Une balise fermante doit avoir <b>le même nom que
+          la balise ouvrante qui lui correspond</b>. Une balise fermante doit
+          contenir un slash (/) entre le chevron initial et le nom de la
+          balise. Ainsi, si &ltp&gt; est une balise ouvrante, &lt/p&gt; sera la
+          balise fermante correspondante.</p>
+            <ul>
+              <li>Les titres : &lth1&gt;&lt/h1&gt;,&lth2&gt;&lt/h2&gt;,&lth3&gt;&lt/h3&gt;... etc</li>
+              <li>Les paragraphes : &ltp&gt;&lt/p&gt;</li>
+              <li>Les listes : &ltul&gt;&lt/ul&gt;, &ltli&gt;&lt/li&gt;</li>
+              <li>Le formatage du texte : &lts&gt&lt/s&gt, &ltb&gt&lt/b&gt </li>
+              <li>Les citations :  &ltcite&gt; &lt/cite&gt;</li>
+              <li>...etc</li>
+            </ul>
+        </p>
+          <p>Un élément HTML se compose d'une balise ouvrante, d'un contenu
+            textuel et d'une balise fermante :</p>
+            <img src="https://mdn.mozillademos.org/files/8573/anatomy-of-an-html-element.png">
+          </p>
+      <h3><a href="http://www.pierre-giraud.com/html-css/cours-complet/elements-balises-attributs-html.php">Les balises orphelines</a></h3>
+        <p>Les balises orphelines sont des balises qui sont à la fois
+          ouvrantes et fermante.Elles ne
+          contiennent pas de contenu. On ferme donc la balise en ajoutant un
+          slash (/) à la fin de la balise.Les balises <b>AUTOFERMANTES</b> sont soit des balises de type
+          <b>BLOC</b> (exemple : &lt;hr /&gt;), soit des balise <b>EN
+          LIGNE</b> (exemple : &lt;img /&gt;).   </p>
+          <ul>
+            <li>Les zones cliquables : &ltarea&gt;</li>
+            <li>Les sauts de ligne : &ltbr&gt;</li>
+            <li>Les images insérées : &ltimg&gt;</li>
+          </ul>
+    <h2><a href="https://www.w3schools.com/html/html_attributes.asp">Les Attributs</a></h2>
+      <p>Les élément HTML peuvent avoir un ou plusieurs attributs. Ce sont
+        des valeurs supplémentaires qui permettent de configurer les
+        éléments ou d'adapter leur comportement.
+        L’élément <b>a</b> (pour "anchor") servant à créer des liens vers
+        d’autres sites ou d’autres pages, va avoir besoin d’un attribut <b>href</b>
+        qui va prendre comme valeur l'adresse de la page vers laquelle on
+        souhaite faire un lien.
+      </p>
+    <h2>La Différence entre inline et block</h2>
+      <p>Par défaut, les éléments HTML sont affichés selon l'un des modes
+        suivants :
+          <li><b><a href="https://developer.mozilla.org/fr/docs/Web/HTML/%C3%89l%C3%A9ments_en_bloc">En-ligne / inline</a></b></li>
+          N'occupe <b>que</b> la largeur indispensable à l'affichage du contenu et
+          ne provoque pas de retour à la ligne.
+      Exemple :
+            <ul>
+              <li>&lt;img&gt;</li>
+              <li>&lt;strong&gt;&lt;/strong&gt; </li>
+              <li>&lt;span&gt;&lt;/span&gt;</li>
+            </ul>
+
+            <li><b><a href="https://developer.mozilla.org/fr/docs/Web/HTML/%C3%89l%C3%A9ments_en_ligne">Bloc / block</a></b></li>
+              Occupe <b>toute</b> la largeur disponible. Lorsque 2 éléments blocs se
+              suivent dans une page, ils sont positionnés (par défaut) l'un
+              sous l'autre.
+            Exemple :
+              <ul>
+                <li>&lt;p&gt;&lt;/p&gt;</li>
+                <li>&lt;article&gt;&lt;/article&gt;</li>
+                <li>&lt;header&gt;&lt;/header&gt;</li>
+              </ul>
+
+    <h1>Comparatif Markdown/HTML</h1>
+
+    <h2>Insertion d'image</h2>
+      <ul>
+        <li>Markdown : ![NomImage](CheminAccesVersImage)</li>
+        <li>Html : &lt;img src="CheminAccesVersImage"&gt;</li>
+      </ul>
+    <h2>Insertion Citation</h2>
+    <h3>Markdown :</h3> <br/>
+    >    Citation.<br>
+    > <br>
+    > -- &lt;cite&gt;Auteur&lt;/cite&gt;</li>
+    <h3>Html :</h3>
+      <ul>
+        <li>Citation Longue : &lt;blockquote&gt;&lt;/blockquote&gt; </li>
+        <li>Citation Courte : &lt;q&gt;&lt;/q&gt;</li>
+        <li>Référence/Source : &lt;cite&gt;&lt;/cite&gt;</li>
+</body>
+</html>
